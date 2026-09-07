@@ -2,7 +2,7 @@
 
 [🏠 主文檔](../README.md) · [🧪 驗證紀錄](validation.md) · [🛍️ 商店介紹](paradox-description.en.md) · [⚠️ 已知風險](security.md)
 
-更新：2026-09-07。官方 Mod Publisher 已成功上傳 0.4.4，模組 ID 為 [158298](https://mods.paradoxplaza.com/mods/158298/Windows)，帳號「我的上傳」清單亦已出現 Live Radio；公開詳情頁仍跳回首頁，尚待確認可正常瀏覽。發布不代表下列未完成驗收已通過；已知風險與限制保留在商店說明。
+更新：2026-09-07。官方 Mod Publisher 已成功上傳 0.4.4，模組 ID 為 [158298](https://mods.paradoxplaza.com/mods/158298/Windows)，帳號「我的上傳」的 Published 篩選清單亦已出現 Live Radio；公開詳情頁仍跳回首頁，尚待確認可正常瀏覽。發布不代表下列未完成驗收已通過；已知風險與限制保留在商店說明。
 
 ---
 
