@@ -6,7 +6,7 @@
 [![相依](https://img.shields.io/badge/需要-ExtendedRadio%2075862-fb8500?style=flat-square)](https://mods.paradoxplaza.com/mods/75862/Windows)
 [![Docs](https://img.shields.io/badge/docs-English-0a7ea4?style=flat-square)](README.md)
 
-在《Cities: Skylines II》原生電台面板收聽網路廣播。**0.4.4 版本，尚未發布到 Paradox Mods。** [English](README.md)
+在《Cities: Skylines II》原生電台面板收聽網路廣播。**0.4.4 已上傳至 [Paradox Mods](https://mods.paradoxplaza.com/mods/158298/Windows)**（ID 158298，公開詳情頁尚待確認）。 [English](README.md)
 
 依台名與國家／地區搜尋 Radio Browser，最多收藏 50 台、保留 20 台最近紀錄，也可新增 HTTP(S) 串流直連網址。播放、暫停、靜音與音量沿用遊戲控制。介面跟隨遊戲語言，提供英文與繁體中文，其餘語言使用英文。
 

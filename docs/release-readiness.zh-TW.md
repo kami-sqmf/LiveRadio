@@ -2,7 +2,7 @@
 
 [🏠 主文檔](../README.md) · [🧪 驗證紀錄](validation.md) · [🛍️ 商店介紹](paradox-description.en.md) · [⚠️ 已知風險](security.md)
 
-更新：2026-09-07。作者已授權發布 0.4.4，目前正在準備提交 Paradox Mods，尚未取得發布成功結果。此授權不代表下列未完成驗收已通過；已知風險與限制保留在商店說明。
+更新：2026-09-07。官方 Mod Publisher 已成功上傳 0.4.4，模組 ID 為 [158298](https://mods.paradoxplaza.com/mods/158298/Windows)，帳號「我的上傳」清單亦已出現 Live Radio；公開詳情頁仍跳回首頁，尚待確認可正常瀏覽。發布不代表下列未完成驗收已通過；已知風險與限制保留在商店說明。
 
 ---
 
@@ -44,7 +44,7 @@ GitHub 只上傳原始碼、建置／測試指令碼、文件、授權與自製�
 5. 若工具提供非公開測試方式，先驗證訂閱、升級及回退；避免本機 Mods 與訂閱版本重複載入。
 6. 完成下列待辦後，另行提交發布；記錄平台模組 ID，再更新 README 的安裝連結及本頁狀態。
 
-官方指出可使用 Visual Studio／Rider Publish，平台提供說明、截圖、相依及支援版本等中繼資料。2026-04-29 更新亦要求發布縮圖。此次官方 Wiki 仍回傳 401，未取得完整 PublishConfiguration schema，因此不提供假定可直接上傳的 XML。
+官方指出可使用 Visual Studio／Rider Publish，平台提供說明、截圖、相依及支援版本等中繼資料。2026-04-29 更新亦要求發布縮圖。此次已從遊戲安裝 C# 模組專案範本，依其 PublishConfiguration.xml 欄位呼叫遊戲內附 ModPublisher.exe。使用既有一般版白名單內容、Public 存取權與 ExtendedRadio 75862 相依；工具以遊戲登入狀態成功驗證帳號並回傳模組 ID 158298。官方範本未提供獨立 AI 欄位，聲明置於簡介與完整說明。
 
 來源：[Code Modding](https://www.paradoxinteractive.com/games/cities-skylines-ii/modding/dev-diary-3-code-modding)、[Paradox Mods](https://www.paradoxinteractive.com/games/cities-skylines-ii/modding/dev-diary-1-paradox-mods)、[1.5.7f1 更新](https://www.paradoxinteractive.com/games/cities-skylines-ii/news/patch-notes-spring-cleaning)。
 
@@ -59,7 +59,7 @@ GitHub 只上傳原始碼、建置／測試指令碼、文件、授權與自製�
 - [ ] 原生解碼優先調查；目前維持 NLayer／FFmpeg，不聲稱原生直播已通過。
 - [ ] 處理或明確接受 [已知風險](security.md)；本輪沒有實作安全修正。
 - [x] 依作者要求補拍英文遊戲截圖，裁切至廣播面板，包含原生 Channel Program；設定頁截圖已移除。
-- [ ] 核對縮圖與截圖是否符合當前上傳端要求。
+- [x] 官方工具接受縮圖與五張英文裁切截圖，並回報發布成功。
 - [ ] 取得目前官方發布設定，核對外部程序規則、相依、遊戲版本及訂閱／升級流程。
 - [ ] 核對發布工具是否有 AI 生成內容的標示欄位，並據實填寫。
 

@@ -29,7 +29,7 @@ Windows; game checks used Cities: Skylines II **1.6.0f1**. Other game versions a
 Enable **ExtendedRadio (Paradox Mods ID 75862)** in the same playset:
 https://mods.paradoxplaza.com/mods/75862/Windows
 
-**Direct MP3 uses the bundled NLayer decoder. AAC/HE-AAC, OGG Vorbis/Opus, HLS and unknown-format Auto URLs need separately installed FFmpeg.** FFmpeg is not bundled or downloaded automatically. Set its real executable path under Options → Live Radio → Audio decoder, then select Check again.
+**Direct MP3 uses the bundled NLayer decoder. AAC/HE-AAC, OGG Vorbis/Opus, HLS and unknown-format Auto URLs need separately installed FFmpeg.** FFmpeg is not bundled or downloaded automatically. Set its real executable path under Options → Live Radio → Audio decoder.
 
 ## ⚠️ Limitations and known risks
 
