@@ -6,7 +6,7 @@
 [![Requires](https://img.shields.io/badge/requires-ExtendedRadio%2075862-fb8500?style=flat-square)](https://mods.paradoxplaza.com/mods/75862/Windows)
 [![Docs](https://img.shields.io/badge/docs-繁體中文-0a7ea4?style=flat-square)](README.zh-TW.md)
 
-Internet radio in the native Cities: Skylines II radio panel. **0.4.4 uploaded to [Paradox Mods](https://mods.paradoxplaza.com/mods/158298/Windows)** (ID 158298; public detail page verification pending). [繁體中文](README.zh-TW.md)
+Internet radio in the native Cities: Skylines II radio panel. **0.4.4 published on [Paradox Mods](https://mods.paradoxplaza.com/mods/158298/Windows)** (ID 158298). [繁體中文](README.zh-TW.md)
 
 Search Radio Browser by name and region, save up to 50 favorites, keep 20 recent stations, or add your own HTTP(S) stream URL. Play, pause, mute and volume use the game's controls. The interface follows the game language: English or Traditional Chinese, with English fallback.
 

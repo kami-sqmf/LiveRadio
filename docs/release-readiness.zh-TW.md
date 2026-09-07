@@ -2,7 +2,7 @@
 
 [🏠 主文檔](../README.md) · [🧪 驗證紀錄](validation.md) · [🛍️ 商店介紹](paradox-description.en.md) · [⚠️ 已知風險](security.md)
 
-更新：2026-09-07。官方 Mod Publisher 已成功上傳 0.4.4，模組 ID 為 [158298](https://mods.paradoxplaza.com/mods/158298/Windows)，帳號「我的上傳」的 Published 篩選清單亦已出現 Live Radio；公開詳情頁仍跳回首頁，尚待確認可正常瀏覽。發布不代表下列未完成驗收已通過；已知風險與限制保留在商店說明。
+更新：2026-09-07。官方 Mod Publisher 已成功上傳 0.4.4，模組 ID 為 [158298](https://mods.paradoxplaza.com/mods/158298/Windows)，帳號「我的上傳」的 Published 篩選清單亦已出現 Live Radio；公開詳情頁已確認可正常瀏覽，說明排序與 Suggested Game Version `1.6.*` 已同步更新。發布不代表下列未完成驗收已通過；已知風險與限制保留在商店說明。
 
 ---
 
@@ -20,7 +20,7 @@
 | 維護 | 大概率不會繼續更新，歡迎 Fork 自行接續開發 |
 | 平台／類別 | Windows / Code Mod；於實際發布工具確認可選值 |
 | 必要相依 | ExtendedRadio，模組 ID **75862**；本機測試版本 75862_21 |
-| 遊戲版本 | 既有實機紀錄為 **1.6.0f1**，其他版本未驗證 |
+| 遊戲版本 | Suggested Game Version：`1.6.*`；既有實機紀錄為 **1.6.0f1**，其他版本未驗證 |
 | 說明 | [英文商店文案](paradox-description.en.md) |
 | 版本說明 | [CHANGELOG](../CHANGELOG.md)，0.4.4 段落 |
 | 套件 | artifacts/LiveRadio-0.4.4.zip，內含 SHA256SUMS.txt |

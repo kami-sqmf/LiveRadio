@@ -2,17 +2,6 @@
 
 Listen to internet radio in the native Cities: Skylines II radio panel.
 
-## 🤖 AI disclosure
-
-**All code in this project was developed using Codex, an AI coding agent.** Third-party components retain their own authorship and licenses.
-
-## 🔧 Maintenance and source
-
-**Further updates are unlikely. You are welcome to fork the MIT-licensed source and continue development yourself.** Fixes, support responses and future game compatibility are not promised.
-
-Source and forks: https://github.com/kami-sqmf/LiveRadio
-Issue reports (no response guarantee): https://github.com/kami-sqmf/LiveRadio/issues
-
 ## ✨ Features
 
 - 🔍 Search Radio Browser by station name and country/region.
@@ -43,6 +32,17 @@ https://github.com/kami-sqmf/LiveRadio/blob/main/docs/security.md
 **Open items in 0.4.4.** The following are not completed for this release:
 - 🧪 Clean environment test and error handling: only Live Radio and ExtendedRadio enabled, tested with FFmpeg missing, no network, dead stations and the dependency missing.
 - 🔇 Audio cleanup: emergency broadcasts, switching back to game stations, and no leftover stream or process after quitting the game.
+
+## 🔧 Maintenance and source
+
+**Further updates are unlikely. You are welcome to fork the MIT-licensed source and continue development yourself.** Fixes, support responses and future game compatibility are not promised.
+
+Source and forks: https://github.com/kami-sqmf/LiveRadio
+Issue reports (no response guarantee): https://github.com/kami-sqmf/LiveRadio/issues
+
+## 🤖 AI disclosure
+
+**All code in this project was developed using Codex, an AI coding agent.** Third-party components retain their own authorship and licenses.
 
 ## 🆕 Version 0.4.4
 
