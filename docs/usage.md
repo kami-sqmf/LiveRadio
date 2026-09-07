@@ -1,8 +1,13 @@
-# User guide
+# 🎧 User guide
 
-[Home](../README.md) · Read the [known risks](security.md) before enabling this version.
+[🏠 Home](../README.md)
 
-## Listening
+> [!IMPORTANT]
+> Read the [⚠️ known risks](security.md) before enabling this version.
+
+---
+
+## ▶️ Listening
 
 1. Enable ExtendedRadio and install Live Radio, then restart the game.
 2. Open the native radio panel in your city. **Game stations** is the home page.
@@ -14,21 +19,25 @@ Explore loads up to 50 rows at a time, with a 1,000-station limit per search. St
 
 The interface follows the **game's language**: English is the default and fallback; Traditional Chinese is available for `zh-HANT`, `zh-TW` and `zh-HK`. Station names and broadcaster-supplied metadata are preserved. The settings entry is **Live Radio**; the internal ID and existing data paths remain `LiveRadio`.
 
-## Add a station URL
+---
+
+## ➕ Add a station URL
 
 Select **Live Radio → Add station**, enter a name and a direct HTTP(S) audio or `.m3u8` URL, then **Save to favorites**. A station website is not a stream URL. URLs with embedded usernames/passwords, fragments, or non-HTTP protocols are rejected. Query parameters are preserved, so expiring signed URLs must be replaced when they expire.
 
 **Auto** recognizes `.mp3`, `.aac`, `.ogg`, `.opus` and `.m3u8`; other URLs are detected by FFmpeg. For an extensionless direct MP3 URL without FFmpeg, choose **MP3** explicitly. Manual stations stay on your computer and are not submitted to Radio Browser. Removing a favorite offers Undo for 10 seconds.
 
-## FFmpeg setup
+---
+
+## ⚙️ FFmpeg setup
 
 | Stream | Without FFmpeg | With FFmpeg |
 | --- | --- | --- |
-| Direct MP3 | Included NLayer decoder | Same included decoder |
-| AAC / HE-AAC | Can be saved; setup guidance | Plays |
-| OGG Vorbis / Opus | Can be saved; setup guidance | Plays |
-| HLS (`.m3u8`) | Can be saved; setup guidance | Plays supported audio tracks |
-| Auto, unknown extension | Needs FFmpeg or an explicit format | Detects supported formats |
+| 🎵 Direct MP3 | Included NLayer decoder | Same included decoder |
+| 🔊 AAC / HE-AAC | Can be saved; setup guidance | Plays |
+| 🔊 OGG Vorbis / Opus | Can be saved; setup guidance | Plays |
+| 📡 HLS (`.m3u8`) | Can be saved; setup guidance | Plays supported audio tracks |
+| 🔍 Auto, unknown extension | Needs FFmpeg or an explicit format | Detects supported formats |
 
 1. Open the [FFmpeg download page](https://ffmpeg.org/download.html#build-windows) and choose a Windows build linked there. FFmpeg itself distributes source code; Windows binaries are built by other providers.
 2. Extract it to a permanent folder. A system-wide installation is not required.
@@ -41,7 +50,9 @@ HLS/Auto prebuffers six seconds and holds up to twenty seconds of PCM, which can
 
 MP3 uses the bundled NLayer decoder, not the game’s native decoder. Continuous native Vorbis/Opus decoding remains unverified. See [development](development.md) and [validation](validation.md) for implementation and test details.
 
-## Local data and network use
+---
+
+## 💾 Local data and network use
 
 Favorites, custom URLs, recent stations and directory cache are stored under `%USERPROFILE%/AppData/LocalLow/Colossal Order/Cities Skylines II/ModsData/LiveRadio/stations.json`. Existing favorites are retained. Older data is backed up during migration; unreadable data is preserved. Artwork is cached in the neighboring `Icons` folder. These files are not included in release packages or city save data.
 

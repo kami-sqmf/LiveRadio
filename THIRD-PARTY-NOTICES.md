@@ -1,8 +1,12 @@
-# Third-party notices
+# 📄 Third-party notices
 
-[Home](README.md) · Project code: [MIT License](LICENSE). The original project code was developed using Codex; the components below retain their own attribution.
+[🏠 Home](README.md) · Project code: [MIT License](LICENSE)
 
-## NLayer 1.16.0
+🤖 **AI disclosure:** the original project code was developed using Codex, an AI coding agent; the components below retain their own attribution.
+
+---
+
+## 🎵 NLayer 1.16.0
 
 The local mod package includes the unmodified NLayer.dll MP3 decoder.
 
@@ -32,7 +36,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-## Runtime dependencies and reference material
+---
+
+## 🔗 Runtime dependencies and reference material
 
 The UI module uses the game's existing React and CS2 UI/input exports. React,
 ReactDOM, TypeScript and esbuild are build/test dependencies and are not bundled

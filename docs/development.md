@@ -1,8 +1,10 @@
-# 開發指南 / Development
+# 🛠️ 開發指南 / Development
 
-[主文檔](../README.md) · [驗證紀錄](validation.md) · [發布準備](release-readiness.zh-TW.md)
+[🏠 主文檔](../README.md) · [🧪 驗證紀錄](validation.md) · [🚀 發布準備](release-readiness.zh-TW.md)
 
-## 建置與安裝
+---
+
+## 🔨 建置與安裝
 
 需要 Windows、.NET SDK、Node.js/npm、已安裝遊戲與 ExtendedRadio。目標框架為 .NET Framework 4.8；UI 使用 TypeScript／React。遊戲及 ExtendedRadio 組件只作本機參照，不能放入儲存庫。
 
@@ -31,15 +33,17 @@ UI 檢查預設使用已安裝的 Microsoft Edge。建置自動從 Player.log �
 
 核心檢查不需開啟遊戲；媒體檢查使用 FFmpeg 與 loopback 合成來源。`./scripts/test.ps1 -Live` 另會連線到真實目錄及電台。UI 替身測試不能取代 Gameface／Unity 驗收。
 
-## 架構與已採用的 UI 決策
+---
+
+## 🧩 架構與已採用的 UI 決策
 
 | 目錄 | 職責 |
 | --- | --- |
-| src/LiveRadio.Core | 目錄、收藏、串流、NLayer／FFmpeg 解碼、有界 PCM 佇列 |
-| src/LiveRadio.Mod | 遊戲生命週期、ExtendedRadio、RadioPanel bindings、圖標快取 |
-| src/LiveRadio.UI | 遊戲 React 執行期上的瀏覽介面、語系與原生輸入元件 |
-| tests | 核心、媒體、UI 替身與獨立原生診斷 |
-| scripts | 建置、驗證、本機安裝與封裝 |
+| 🧰 src/LiveRadio.Core | 目錄、收藏、串流、NLayer／FFmpeg 解碼、有界 PCM 佇列 |
+| 🎮 src/LiveRadio.Mod | 遊戲生命週期、ExtendedRadio、RadioPanel bindings、圖標快取 |
+| 🖥️ src/LiveRadio.UI | 遊戲 React 執行期上的瀏覽介面、語系與原生輸入元件 |
+| 🧪 tests | 核心、媒體、UI 替身與獨立原生診斷 |
+| 📜 scripts | 建置、驗證、本機安裝與封裝 |
 
 原生面板首頁保留遊戲電台，進入 Live Radio 預設收藏。收藏、探索、最近及自訂電台共用播放核心，UI 不自行建立播放器。原生暫停、音量、靜音維持單一狀態來源；Live Radio AudioSource 接入 Radio 混音群組，原生等化器目前不分析直播。
 
@@ -51,7 +55,9 @@ MP3 與 FFmpeg 使用單一寫入者／讀取者 PCM 佇列。滿緩衝時只讓
 
 ExtendedRadio 的新增介面沒有完整移除／刷新功能，因此配接器只清理自己的頻道並使遊戲快取失效；涉及的私有欄位需要在遊戲更新後重驗。
 
-## 原生解碼調查與後續驗證
+---
+
+## 🔬 原生解碼調查與後續驗證
 
 目前 **MP3 使用內附 NLayer，其餘支援格式使用外部 FFmpeg**。不需 FFmpeg 不等於遊戲原生解碼；原生 Vorbis／Opus 直播尚未驗證或設為預設。
 

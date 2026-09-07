@@ -1,16 +1,18 @@
-# Live Radio 0.4.4 發布準備
+# 🚀 Live Radio 0.4.4 發布準備
 
-[主文檔](../README.md) · [驗證紀錄](validation.md) · [商店介紹](paradox-description.en.md) · [已知風險](security.md)
+[🏠 主文檔](../README.md) · [🧪 驗證紀錄](validation.md) · [🛍️ 商店介紹](paradox-description.en.md) · [⚠️ 已知風險](security.md)
 
 更新：2026-09-07。目前尚未上架 Paradox Mods。本輪準備素材與一般版套件，不提交平台發布。
 
-## 發布資料
+---
+
+## 🏷️ 發布資料
 
 | 欄位 | 內容 |
 | --- | --- |
 | 名稱／版本 | Live Radio / 0.4.4 |
 | 作者 | kami-sqmf |
-| 開發聲明 | 本專案所有程式碼皆使用 Codex 開發；第三方元件保留自身聲明 |
+| 🤖 AI 使用聲明 | 本專案所有程式碼皆使用 AI 編碼代理 Codex 開發；第三方元件保留自身聲明 |
 | 縮圖 | release-assets/thumbnail.png，1024 × 1024；以 scripts/make-thumbnail.ps1 產生 |
 | 原始碼 | https://github.com/kami-sqmf/LiveRadio |
 | 問題紀錄 | https://github.com/kami-sqmf/LiveRadio/issues；不保證回覆 |
@@ -23,13 +25,17 @@
 | 版本說明 | [CHANGELOG](../CHANGELOG.md)，0.4.4 段落 |
 | 套件 | artifacts/LiveRadio-0.4.4.zip，內含 SHA256SUMS.txt |
 
-## 封裝與 GitHub
+---
+
+## 📦 封裝與 GitHub
 
 `./scripts/build.ps1` 建置一般版，`./scripts/test.ps1` 驗證核心，`./scripts/package-release.ps1` 產生 ZIP。封裝使用執行產物白名單，加上主文檔、子文檔、MIT 與第三方授權，並為每個檔案產生 SHA-256。文件從工作區取得，避免拿到舊建置中的過時副本。
 
 GitHub 只上傳原始碼、建置／測試指令碼、文件、授權與自製發布素材。排除 .tools、.work、artifacts、Local.props、node_modules、bin／obj、遊戲 DLL、ExtendedRadio／Harmony DLL、FFmpeg、私人收藏、快取圖標、日誌及存檔。ZIP 另排除 PDB 及診斷探測程式。
 
-## Paradox Mods 上傳流程
+---
+
+## 🚢 Paradox Mods 上傳流程
 
 1. 從遊戲安裝目前 Modding Toolchain，取得當前官方專案／Publish 範本；先核對工具提供的欄位及相依檔案收集方式。
 2. 以一般版 artifacts/LiveRadio 的執行檔與必要文件準備內容，對照 ZIP 白名單。不要直接發布 bin 或整個工作區。
@@ -42,7 +48,9 @@ GitHub 只上傳原始碼、建置／測試指令碼、文件、授權與自製�
 
 來源：[Code Modding](https://www.paradoxinteractive.com/games/cities-skylines-ii/modding/dev-diary-3-code-modding)、[Paradox Mods](https://www.paradoxinteractive.com/games/cities-skylines-ii/modding/dev-diary-1-paradox-mods)、[1.5.7f1 更新](https://www.paradoxinteractive.com/games/cities-skylines-ii/news/patch-notes-spring-cleaning)。
 
-## 尚待完成
+---
+
+## ☑️ 尚待完成
 
 - [ ] 現版一般包完整實機驗收；此前 0.4.4 圖標實測來自診斷版。
 - [ ] 較長 MP3／AAC／Vorbis／Opus／HLS 試聽與分段銜接；追蹤政大讀取錯誤、Big B 連線失敗與輔大偶發格式問題。
@@ -52,5 +60,6 @@ GitHub 只上傳原始碼、建置／測試指令碼、文件、授權與自製�
 - [ ] 處理或明確接受 [已知風險](security.md)；本輪沒有實作安全修正。
 - [ ] 補拍正常曝光的英文／繁中遊戲截圖；核對縮圖是否符合當前上傳端要求。
 - [ ] 取得目前官方發布設定，核對外部程序規則、相依、遊戲版本及訂閱／升級流程。
+- [ ] 核對發布工具是否有 AI 生成內容的標示欄位，並據實填寫。
 
 不承諾未來更新，並不代表上述未完成項目已通過。MIT 授權與維護聲明已依作者指示同步到主文檔與商店介紹。
