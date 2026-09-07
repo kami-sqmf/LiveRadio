@@ -1,0 +1,16 @@
+.tools/
+.work/
+**/bin/
+**/obj/
+artifacts/
+Local.props
+*.user
+**/node_modules/
+src/LiveRadio.UI/dist/
+.vs/
+.idea/
+.env
+.env.*
+*.pubxml.user
+PublishConfiguration.xml
+*.log

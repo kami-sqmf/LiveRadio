@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>LiveRadio</AssemblyName>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LiveRadio.Core\LiveRadio.Core.csproj" />
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+    <Reference Include="Game;Colossal.Core;Colossal.IO;Colossal.IO.AssetDatabase;Colossal.Logging;Colossal.Localization;Colossal.UI;Colossal.UI.Binding;Colossal.PSI.Common;Unity.Entities;Unity.Collections;Unity.Mathematics;UnityEngine;UnityEngine.CoreModule;UnityEngine.AudioModule;UnityEngine.InputLegacyModule">
+      <HintPath>$(GameManagedPath)\%(Identity).dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <PropertyGroup Condition="'$(LiveRadioDiagnostics)' == 'true'">
+    <DefineConstants>$(DefineConstants);LIVERADIO_DIAGNOSTICS</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(LiveRadioDiagnostics)' == 'true'">
+    <Compile Include="../../tests/native/NativeDecoderProbe.cs" />
+    <Reference Include="UnityEngine.UnityWebRequestModule;UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>$(GameManagedPath)\%(Identity).dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+  <Target Name="ValidateGameReferences" BeforeTargets="ResolveReferences">
+    <Error Condition="!Exists('$(GameManagedPath)\Game.dll')" Text="Run scripts/build.ps1 or set GameManagedPath in Local.props." />
+    <Error Condition="!Exists('$(ExtendedRadioPath)\ExtendedRadio.dll')" Text="ExtendedRadio is required. Set ExtendedRadioPath in Local.props." />
+  </Target>
+</Project>

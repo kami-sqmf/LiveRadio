@@ -1,0 +1,68 @@
+/* Opaque colors calibrated against the user's SDR screenshots; Gameface-compatible CSS only. */
+.lr-native-content.lr-native-content { display:flex; flex-direction:column; overflow:hidden; }
+.lr-native-content.lr-browser-open { background-image:none; background-color:#19252e; }
+.lr-original { display:flex; flex-grow:1; flex-shrink:1; flex-basis:0; flex-direction:row; min-height:0; }
+.lr-mode { display:flex; flex-shrink:0; padding:7rem 12rem; background-color:#141d24; }
+.lr-mode button,.lr-browser button,.lr-fallback button { color:#eaf2f5; background-color:#293f4c; border:1rem solid #516d7c; border-radius:4rem; padding:6rem 12rem; margin-right:6rem; font-size:var(--fontSizeS); white-space:nowrap; flex-shrink:0; }
+.lr-mode button:hover,.lr-browser button:hover,.lr-fallback button:hover { background-color:#355463; }
+.lr-mode button.lr-active,.lr-browser button.lr-active { color:#7ed8f0; border-color:#62b7ce; background-color:#254958; }
+.lr-browser button[disabled] { color:#bacbd3; background-color:#293a44; border-color:#455c69; }
+.lr-browser button.lr-remove { color:#ff9b9b; background-color:#3d2730; border-color:#a95b66; }
+.lr-browser button.lr-remove:hover { color:#ffd5d5; background-color:#593039; border-color:#e3828e; }
+.lr-browser-host { position:relative; flex-grow:1; flex-shrink:1; flex-basis:0; min-height:0; }
+.lr-browser { position:absolute; top:0; right:0; bottom:0; left:0; display:flex; flex-direction:column; background-color:#19252e; color:#eaf2f5; font-size:var(--fontSizeS); }
+.lr-tabs { display:flex; padding:8rem 12rem; flex-shrink:0; }
+.lr-tabs button { display:flex; align-items:center; }
+.lr-tab-count { margin-left:6rem; color:#c5e7f1; }
+.lr-filters { position:relative; flex-shrink:0; padding:0 12rem 5rem; }
+.lr-search-line { display:flex; align-items:flex-end; }
+.lr-search-label { display:flex; flex-direction:column; flex-grow:1; flex-shrink:1; flex-basis:0; min-width:0; margin-right:8rem; }
+.lr-browser .lr-text-input { display:block; box-sizing:border-box; width:100%; height:36rem; min-height:36rem; color:#f2f7fa; background-color:#101c24; border:1rem solid #597787; border-radius:4rem; padding:7rem 10rem; margin-top:4rem; font-size:var(--fontSizeS); }
+.lr-browser .lr-text-input.placeholder { color:#aac0cb; }
+.lr-browser .lr-text-input.focused,.lr-browser .lr-text-input:focus { border-color:#7ed8f0; background-color:#13242f; }
+.lr-search-line>button { height:36rem; }
+.lr-region-line { display:flex; align-items:center; flex-wrap:wrap; margin-top:8rem; }
+.lr-region-line>span { margin-right:8rem; color:#c3d4dd; }
+.lr-region-button { display:flex; align-items:center; justify-content:space-between; min-width:120rem; }
+.lr-chevron { width:0; height:0; margin-left:10rem; border-left:4rem solid transparent; border-right:4rem solid transparent; border-top:5rem solid #c3dce7; }
+.lr-check { display:flex; align-items:center; font-size:var(--fontSizeXS); margin:4rem 0; padding:3rem 0; color:#e1edf3; }
+.lr-native-check { width:18rem; height:18rem; margin-right:7rem; flex-shrink:0; }
+.lr-region-popup { position:absolute; top:100%; left:12rem; width:290rem; height:280rem; display:flex; flex-direction:column; padding:10rem; background-color:#172630; border:1rem solid #648b9f; border-radius:5rem; z-index:20; }
+.lr-region-options { flex-grow:1; flex-shrink:1; flex-basis:0; min-height:0; margin-top:8rem; }
+.lr-region-options button { display:block; width:100%; text-align:left; margin-bottom:4rem; }
+.lr-summary { padding:4rem 12rem 6rem; flex-shrink:0; color:#bed0dc; font-size:var(--fontSizeXS); }
+.lr-caption { color:#bed0dc; font-size:var(--fontSizeXS); padding:2rem 12rem; }
+.lr-list { flex-grow:1; flex-shrink:1; flex-basis:0; min-height:0; margin:0 12rem 8rem; }
+.lr-row { display:flex; flex-direction:column; padding:8rem; margin-bottom:6rem; border:1rem solid #3d5969; border-radius:4rem; background-color:#22333f; }
+.lr-row.lr-selected { border-color:#62b7ce; background-color:#254958; }
+.lr-row-main { display:flex; align-items:center; }
+.lr-icon { position:relative; display:flex; align-items:center; justify-content:center; border:1rem solid #486777; border-radius:50%; width:30rem; height:30rem; margin-right:8rem; color:#8dd4e8; flex-shrink:0; overflow:hidden; }
+.lr-browser button.lr-station { display:flex; flex-direction:column; flex-grow:1; flex-shrink:1; flex-basis:0; min-width:0; padding:1rem 4rem; text-align:left; border-color:transparent; background-color:transparent; white-space:normal; }
+.lr-name { width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.lr-meta { width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; color:#bdcfda; font-size:var(--fontSizeXS); margin-top:3rem; }
+.lr-row-status,.lr-detail { padding:5rem 4rem 0 42rem; font-size:var(--fontSizeXS); color:#c8d9e4; }
+.lr-detail { overflow:hidden; white-space:normal; }
+.lr-detail div { margin-top:5rem; }
+.lr-empty { display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:165rem; padding:20rem; text-align:center; }
+.lr-empty strong { font-size:var(--fontSizeM); }
+.lr-empty p { margin:12rem 0 16rem; color:#bdcfda; }
+.lr-more { margin:7rem 0; }
+.lr-message { padding:8rem 12rem; flex-shrink:0; font-size:var(--fontSizeXS); background-color:#293e4b; }
+.lr-message button,.lr-notice button { margin-left:10rem; padding:3rem 8rem; }
+.lr-notice { position:absolute; bottom:8rem; left:16rem; right:16rem; padding:8rem 12rem; border:1rem solid #638397; border-radius:4rem; background-color:#172630; color:#eaf2f5; font-size:var(--fontSizeXS); }
+.lr-error { color:#ffdbab; }
+.lr-fallback { position:absolute; right:30rem; bottom:130rem; }
+.lr-fallback-panel { position:relative; width:700rem; height:550rem; background-color:#19252e; }
+
+.lr-tabs .lr-add { margin-left:auto; }
+.lr-manual label { display:flex; flex-direction:column; margin:12rem 0 8rem; }
+.lr-manual strong { font-size:var(--fontSizeM); }
+.lr-manual .lr-text-input { margin-top:5rem; }
+.lr-format,.lr-form-actions { display:flex; margin-top:12rem; }
+.lr-format button,.lr-form-actions button { margin-right:6rem; }
+.lr-decoder { margin-bottom:6rem; }
+.lr-decoder-help p { margin:8rem 0; }
+/* Cached PNGs already contain centered artwork in a square canvas. Explicitly
+   fill the icon box: Gameface misplaces intrinsic-size images constrained only
+   by max-width/max-height when centering them in a clipped flex container. */
+.lr-icon img { position:absolute; top:0; left:0; display:block; width:100%; height:100%; }
