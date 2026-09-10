@@ -8,6 +8,8 @@
 
 在《Cities: Skylines II》原生電台面板收聽網路廣播。**0.4.4 已發布至 [Paradox Mods](https://mods.paradoxplaza.com/mods/158298/Windows)**（ID 158298）。 [English](README.md)
 
+此儲存庫也包含獨立的手機音訊接收模組 [Airplay Radio](AirplayRadio/README.zh-TW.md)，**0.3.1 已發布至 [Paradox Mods](https://mods.paradoxplaza.com/mods/158648/Windows)**。原始碼位於 `AirplayRadio/`，使用自己的 GPL-3.0-or-later 授權及第三方聲明；Live Radio 維持 MIT。
+
 依台名與國家／地區搜尋 Radio Browser，最多收藏 50 台、保留 20 台最近紀錄，也可新增 HTTP(S) 串流直連網址。播放、暫停、靜音與音量沿用遊戲控制。介面跟隨遊戲語言，提供英文與繁體中文，其餘語言使用英文。
 
 ---

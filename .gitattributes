@@ -1,0 +1,2 @@
+# Keep the MSYS2 codec build script executable after a Windows checkout.
+*.sh text eol=lf

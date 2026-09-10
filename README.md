@@ -8,6 +8,8 @@
 
 Internet radio in the native Cities: Skylines II radio panel. **0.4.4 published on [Paradox Mods](https://mods.paradoxplaza.com/mods/158298/Windows)** (ID 158298). [繁體中文](README.zh-TW.md)
 
+This repository also contains [Airplay Radio](AirplayRadio/README.md), a separate phone-audio receiver mod: **0.3.1 published on [Paradox Mods](https://mods.paradoxplaza.com/mods/158648/Windows)**. Its source is under `AirplayRadio/` with its own GPL-3.0-or-later license and third-party notices; Live Radio remains MIT.
+
 Search Radio Browser by name and region, save up to 50 favorites, keep 20 recent stations, or add your own HTTP(S) stream URL. Play, pause, mute and volume use the game's controls. The interface follows the game language: English or Traditional Chinese, with English fallback.
 
 ---

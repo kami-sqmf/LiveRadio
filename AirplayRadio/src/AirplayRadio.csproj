@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>AirplayRadio</AssemblyName>
+    <Version>0.3.1</Version>
+    <PlatformTarget>x64</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Drawing" />
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+    <Reference Include="Game;Colossal.Core;Colossal.IO;Colossal.IO.AssetDatabase;Colossal.Logging;Colossal.Localization;Colossal.UI;Colossal.UI.Binding;Colossal.PSI.Common;Unity.Entities;Unity.Collections;Unity.Mathematics;UnityEngine;UnityEngine.CoreModule;UnityEngine.AudioModule">
+      <HintPath>$(GameManagedPath)\%(Identity).dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

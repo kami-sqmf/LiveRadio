@@ -14,3 +14,45 @@ src/LiveRadio.UI/dist/
 *.pubxml.user
 PublishConfiguration.xml
 *.log
+
+# Compiled outputs, downloaded packages and temporary files
+*.dll
+*.exe
+*.pdb
+*.a
+*.o
+*.obj
+*.lib
+*.so
+*.dylib
+*.zip
+*.7z
+*.tar
+*.tar.*
+*.nupkg
+*.tmp
+*.bak
+__pycache__/
+*.py[cod]
+.pytest_cache/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+build.ninja
+.ninja_deps
+.ninja_log
+
+# Local publisher settings and receiver identity/cache
+PublishConfiguration.*.xml
+ModsData/
+Logs/
+receiver.key
+device-id.txt
+.agents/
+.codex/
+
+# Retain only the final store thumbnail and cropped panel in Git.
+# Full original captures and the duplicate raster icon stay on this computer.
+/AirplayRadio/release-assets/radio.en.png
+/AirplayRadio/release-assets/settings.en.png
+/AirplayRadio/assets/station.png

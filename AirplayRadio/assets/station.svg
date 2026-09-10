@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" shape-rendering="geometricPrecision">
+  <title>Airplay Radio</title>
+  <circle cx="64" cy="64" r="62" fill="#102733"/>
+  <g fill="none" stroke="#71dfce" stroke-width="5.5">
+    <path d="M 42 102.105 A 44 44 0 1 1 86 102.105"/>
+    <path d="M 49 90 A 30 30 0 1 1 79 90"/>
+    <path d="M 56 77.856 A 16 16 0 1 1 72 77.856"/>
+  </g>
+  <g fill="none" stroke="#71dfce" stroke-width="4.5" stroke-linejoin="round">
+    <path d="M 51 105 L 64 67 L 77 105 M 58.184 84 L 69.816 84 M 54.421 95 L 73.579 95"/>
+  </g>
+  <circle cx="64" cy="64" r="6" fill="#71dfce"/>
+</svg>
